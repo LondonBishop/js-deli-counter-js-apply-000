@@ -3,7 +3,15 @@ function takeANumber (customersWaiting, newCustomer) {
   return 'Welcome, ' + newCustomer + '. You are number ' + customersWaiting.length + ' in line.';
 }
 
+var customerNumber = 1;
 
+function takeANumber2(customersWaiting){
+  var returnString = 'Welcome your number : ' + customerNumber;
+  customersWaiting.push(customerNumber);
+  customerNumber++;
+  
+  return returnString;
+}
 
 function nowServing(customersWaiting) {
   var returnString = 'There is nobody waiting to be served!';
